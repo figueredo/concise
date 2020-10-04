@@ -37,3 +37,14 @@ body > main {
   max-width: 42rem;
   width: 100%;
 }
+
+a {
+  color: #ea5455;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #ea5455;
+  text-decoration: underline;
+  text-decoration-color: #ea5455;
+}

@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+        <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+        {{ if .NextPage }}
+        <li><a href="{{ .NextPage.Permalink }}">{{ .NextPage.Title }}</a></li>
+        {{ end }}
+        {{ if .PrevPage }}
+        <li><a href="{{ .PrevPage.Permalink }}">{{ .PrevPage.Permalink }}</a></li>
+        {{ end }}
+    </ul>
+</nav>

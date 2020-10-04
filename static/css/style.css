@@ -5,5 +5,35 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+
   margin: 0;
+  min-height: 100vh;
+
+  background-color: #e5e5e5;
+}
+
+body > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 7rem;
+  margin-bottom: 3rem;
+}
+
+body > footer {
+}
+
+body > main {
+  flex: 1;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  max-width: 42rem;
+  width: 100%;
 }

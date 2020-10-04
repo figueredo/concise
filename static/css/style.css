@@ -130,12 +130,143 @@ article.post-summary > header > h1 {
 }
 
 article.post-summary > header > small {
-  color: #5C5C5C;
+  color: #2d4059;
 }
 
 article.post-summary > main.home > article > p {
-  color: #5C5C5C;
+  color: #2d4059;
   margin: 0;
+}
+
+article.post > header {
+  margin-bottom: 2rem;
+}
+
+article.post > header > h1 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+
+  font-size: 2.617rem;
+  font-weight: 600;
+  line-height: 2.617rem;
+}
+
+article.post > header > small {
+  font-family: 'Poppins', sans-serif;
+  color: #2d4059;
+}
+
+article.post > header > p {
+  font-family: 'Poppins', sans-serif;
+  color: #2d4059;
+  margin-bottom: 0.5rem;
+}
+
+article.post > blockquote {
+  padding: .5rem 1rem;
+  margin-left: 0;
+  margin-bottom: 1rem;
+  color: #2d4059;
+  border-left: .15rem solid #ea5455;
+}
+
+article.post > blockquote > p {
+  line-height: 1.5rem;
+  margin: 0;
+}
+
+article.post > ul {
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+article.post > ul li::before {
+  display: inline-block;
+  width: 1rem;
+  content: "\2022";
+  color: #ea5455;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+article.post > ol {
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: li;
+}
+
+article.post > ol li {
+  counter-increment: li;
+}
+
+article.post > ol li::before {
+  display: inline-block;
+  width: 1rem;
+  margin-right: 0.5rem;
+  content: counter(li);
+  color: #ea5455;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+  direction: rtl;
+}
+
+
+article.post li {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+article.post > p {
+  line-height: 1.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+article.post > h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.617rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+article.post > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.618rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+article.post > h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+article.post > h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+article.post > h5 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8333rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+article.post > h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.6944rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
 .color-accent {

@@ -1,0 +1,8 @@
+<article class="post">
+    <header>
+        <h1>{{ .Title }}</h1>
+        <small>{{ .Date.Format "Jan 2, 2006" }}</time> <span class="color-accent">&middot;</span> {{ .ReadingTime }} min read</small>
+    </header>
+
+    {{ .Content }}
+</article>

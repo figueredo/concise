@@ -49,7 +49,33 @@ body > header .header-dot {
 }
 
 body > footer {
+  display: flex;
+  flex-direction: row-reverse;
 }
+
+body > footer > ul {
+  margin: 0;
+  padding: 0;
+  padding-right: 3rem;
+  padding-bottom: 3rem;
+
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+
+body > footer > ul > li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8333rem;
+  text-transform: lowercase;
+}
+
+body > footer > ul > li:not(:last-child)::after {
+  content: '.';
+  padding-right: 0.3rem;
+  padding-left: 0.1rem;
+}
+
 
 body > main {
   flex: 1;

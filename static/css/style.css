@@ -316,6 +316,19 @@ article.post > figure > img {
   max-width: 100%;
 }
 
+.not-found {
+  text-align: center;
+}
+
+.not-found > img {
+  max-width: 50%;
+}
+
+.not-found > figcaption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #ea5455;
+}
 
 .color-accent {
   color: #ea5455;

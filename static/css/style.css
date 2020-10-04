@@ -99,3 +99,45 @@ a:hover {
   text-decoration: underline;
   text-decoration-color: #ea5455;
 }
+
+article.post-summary {
+  margin-bottom: 3rem;
+
+  font-family: 'Poppins', sans-serif;
+}
+
+article.post-summary a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+article.post-summary a:hover {
+  color: #ea5455;
+  text-decoration: underline;
+}
+
+article.post-summary > header {
+  margin-bottom: 1rem;
+}
+
+article.post-summary > header > h1 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+
+  font-size: 1.618rem;
+  font-weight: 600;
+  line-height: 1.618rem;
+}
+
+article.post-summary > header > small {
+  color: #5C5C5C;
+}
+
+article.post-summary > main.home > article > p {
+  color: #5C5C5C;
+  margin: 0;
+}
+
+.color-accent {
+  color: #ea5455;
+}

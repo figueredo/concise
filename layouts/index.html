@@ -1,5 +1,12 @@
 {{ define "main" }}
 <main>
+    {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.MainSections -}}
+    {{- $paginator := .Paginate $pages -}}
 
+    {{ range $paginator.Pages }}
+    {{ .Render "summary"}}
+    {{- end }}
+
+    {{ template "_internal/pagination.html" . }}
 </main>
 {{ end }}

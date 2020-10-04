@@ -1,0 +1,11 @@
+<article class="post-summary">
+  <header>
+      <h1>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </h1>
+      <small>{{ .Date.Format "Jan 2, 2006" }}</time> <span class="color-accent">&middot;</span> {{ .ReadingTime }} min read</small>
+  </header>
+  <p>
+      {{ .Summary }}
+  </p>
+</article>

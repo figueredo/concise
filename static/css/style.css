@@ -269,6 +269,23 @@ article.post > h6 {
   margin-bottom: 0.5rem;
 }
 
+article.post > figure {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+article.post > figure > figcaption {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8333rem;
+  color: #2d4059;
+  text-align: center;
+}
+
+article.post > figure > img {
+  max-width: 100%;
+}
+
+
 .color-accent {
   color: #ea5455;
 }

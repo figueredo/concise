@@ -8,4 +8,10 @@
     </header>
 
     {{ .Content }}
+
+    {{ if .Site.Params.commentsTwitter }}
+    <footer>
+        <a href="https://twitter.com/intent/tweet?screen_name={{.Site.Params.commentsTwitter}}&ref_src=twsrc%5Etfw&text={{.Permalink}}" target="_blank">Discuss on Twitter</a>
+    </footer>
+    {{ end }}
 </article>

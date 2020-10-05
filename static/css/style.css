@@ -203,6 +203,10 @@ article.post > header > small {
   color: #5C5C5C;
 }
 
+article.post > footer {
+  margin-top: 2rem;
+}
+
 article.post > blockquote {
   padding: .5rem 1rem;
   margin-left: 0;

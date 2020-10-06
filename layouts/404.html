@@ -1,7 +1,7 @@
 {{ define "main"}}
 <main>
   <figure class="not-found">
-    <img src="{{ .Site.Params.error404Picture }}">
+    <img src="{{ .Site.Params.error404Picture | relURL }}">
     <figcaption>{{ .Site.Params.error404Message }}</figcaption>
   </figure>
 </main>

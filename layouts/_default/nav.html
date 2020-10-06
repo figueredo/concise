@@ -1,11 +1,11 @@
 <nav>
     <ul>
         {{ if .NextPage }}
-        <li><a href="{{ .NextPage.Permalink }}">{{ .NextPage.Title }}</a></li>
+        <li><a href="{{ .NextPage.RelPermalink }}">{{ .NextPage.Title }}</a></li>
         {{ end }}
         {{ if .PrevPage }}
-        <li><a href="{{ .PrevPage.Permalink }}">{{ .PrevPage.Title }}</a></li>
+        <li><a href="{{ .PrevPage.RelPermalink }}">{{ .PrevPage.Title }}</a></li>
         {{ end }}
-        <li><a href="{{ .Site.BaseURL | default "/" }}">Home</a></li>
+        <li><a href="{{ "/" | relURL }}">Home</a></li>
     </ul>
 </nav>

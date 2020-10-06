@@ -2,7 +2,7 @@
     <ul>
         {{ range $link := .Site.Params.links }}
             <li>
-                <a href="{{ $link.url }}" rel="me" title="{{ $link.title }}" target="_blank">{{ $link.title }}</a>
+                <a href="{{ $link.url | safeURL }}" rel="me" title="{{ $link.title }}" target="_blank">{{ $link.title }}</a>
             </li>
         {{ end }}
     </ul>
